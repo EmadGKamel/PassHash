@@ -3,7 +3,7 @@ from cx_Freeze import setup, Executable
 base = None
 
 
-executables = [Executable("main.py", base=Win32GUI)]
+executables = [Executable("main.py", base=base)]
 
 packages = ["idna"]
 options = {

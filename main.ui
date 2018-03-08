@@ -105,14 +105,14 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>97</x>
+      <x>170</x>
       <y>190</y>
-      <width>341</width>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Done By Emad G.Kamel  github.com/EmadGKamel</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Done By Emad G.Kamel  &lt;a href=&quot;github.com/EmadGKamel&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Github&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>

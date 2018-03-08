@@ -57,7 +57,7 @@ class MainApp(QMainWindow):
         self.horizontalLayout_2.addWidget(self.sha_sum)
         self.horizontalLayout_2.setStretch(1, 1)
         self.label_3 = QLabel(self.centralwidget)
-        self.label_3.setGeometry(QRect(97, 190, 341, 20))
+        self.label_3.setGeometry(QRect(170, 190, 341, 20))
         self.label_3.setObjectName("label_3")
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -71,7 +71,7 @@ class MainApp(QMainWindow):
         self.clear_btn.setText(_translate("MainWindow", "Clear"))
         self.label.setText(_translate("MainWindow", "MD5 Sum :    "))
         self.label_2.setText(_translate("MainWindow", "SHA-1 Sum : "))
-        self.label_3.setText(_translate("MainWindow", "Done By Emad G.Kamel      github.com/EmadGKamel"))
+        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p>Done By Emad G.Kamel  <a href=\"github.com/EmadGKamel\"><span style=\" text-decoration: underline; color:#0000ff;\">Github</span></a></p></body></html>"))
 
     def center(self):
         qr = self.frameGeometry()

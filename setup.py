@@ -1,23 +1,20 @@
 from cx_Freeze import setup, Executable
 
-base = None
+# Dependencies are automatically detected, but it might need
+# fine tuning.
+buildOptions = dict(packages = ["hashlib", "sys"], excludes = [], include_files = ["Softies-icons-lock_256px.png"])
 
+import sys
+base = 'Win32GUI' if sys.platform=='win32' else None
 
-executables = [Executable("main.py", base=base)]
-
-packages = ["idna"]
-options = {
-    'build_exe': {
-
-        'packages':packages,
-    },
-
-}
+executables = [
+    Executable('main.py', base=base)
+]
 
 setup(
-    name = "PassHash",
-    options = options,
-    version = "1.0",
-    description = 'Simple MD5/SHA-1 calculator.',
+    name='PassHash',
+    version = '1.0',
+    description = 'A Simple MD5/SHA1 Program',
+    options = dict(build_exe = buildOptions),
     executables = executables
 )
